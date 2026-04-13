@@ -25,6 +25,7 @@ export interface Destination {
   description: string;
 }
 
+
 export const destinations: Destination[] = [
   {
     "id": "nainital",
@@ -114,9 +115,10 @@ export const destinations: Destination[] = [
         "id": "pangot"
       }
     ],
-    "image": "/images/destinations/nainital_user.png",
+    "image": "/images/destinations/nainital.jpg",
     "description": "Popular hill station centered around Naini Lake, known for boating, viewpoints, shopping, and colonial heritage."
   },
+  
   {
     "id": "bhimtal",
     "name": "Bhimtal",
@@ -187,9 +189,10 @@ export const destinations: Destination[] = [
         "id": "naukuchiatal"
       }
     ],
-    "image": "/images/destinations/bhimtal_distinct_wiki.jpg",
+    "image": "/images/destinations/bhimtal.jpg",
     "description": "Scenic lake town near Nainital known for boating and quieter surroundings."
   },
+  
   {
     "id": "sattal",
     "name": "Sattal",
@@ -260,9 +263,10 @@ export const destinations: Destination[] = [
         "id": "naukuchiatal"
       }
     ],
-    "image": "/images/destinations/sattal_nature.jpg",
+    "image": "/images/destinations/sattal.jpg",
     "description": "Cluster of freshwater lakes popular for nature stays and birdwatching."
   },
+  
   {
     "id": "naukuchiatal",
     "name": "Naukuchiatal",
@@ -334,9 +338,10 @@ export const destinations: Destination[] = [
         "id": "nainital"
       }
     ],
-    "image": "/images/destinations/naukuchiatal_distinct_wiki.jpg",
+    "image": "/images/destinations/naukuchiatal.jpg",
     "description": "Nine-cornered lake destination known for peaceful views and adventure activities."
   },
+  
   {
     "id": "jim-corbett",
     "name": "Jim Corbett National Park",
@@ -414,9 +419,10 @@ export const destinations: Destination[] = [
         "id": "nainital"
       }
     ],
-    "image": "/images/destinations/jim-corbett_user.png",
+    "image": "/images/destinations/jim-corbett.jpg",
     "description": "Forested wildlife sanctuary known for Bengal tigers, safaris, river landscapes, and biodiversity."
   },
+  
   {
     "id": "almora",
     "name": "Almora",
@@ -494,9 +500,10 @@ export const destinations: Destination[] = [
         "id": "ranikhet"
       }
     ],
-    "image": "/images/destinations/almora_user.png",
+    "image": "/images/destinations/almora.jpg",
     "description": "Cultural center of Kumaon known for temples, ridge views, bazaars, and handicrafts."
   },
+  
   {
     "id": "binsar",
     "name": "Binsar",
@@ -563,9 +570,10 @@ export const destinations: Destination[] = [
         "id": "jageshwar"
       }
     ],
-    "image": "/images/kumaon/almora/binsar.jpg",
+    "image": "/images/destinations/binsar.jpg",
     "description": "Forest sanctuary and scenic retreat known for Himalayan views and quiet stays."
   },
+  
   {
     "id": "jageshwar",
     "name": "Jageshwar",
@@ -632,9 +640,10 @@ export const destinations: Destination[] = [
         "id": "binsar"
       }
     ],
-    "image": "/images/kumaon/almora/jageshwar.jpg",
+    "image": "/images/destinations/jageshwar.jpg",
     "description": "Historic temple complex in deodar forests, important for Shaivite pilgrimage and heritage tourism."
   },
+  
   {
     "id": "kausani",
     "name": "Kausani",
@@ -703,9 +712,10 @@ export const destinations: Destination[] = [
         "id": "bageshwar"
       }
     ],
-    "image": "/images/destinations/kausani_user.png",
+    "image": "/images/destinations/kausani.jpg",
     "description": "Panoramic Himalayan retreat known for sunrise views, tea gardens, and Gandhi heritage."
   },
+  
   {
     "id": "munsiyari",
     "name": "Munsiyari",
@@ -775,9 +785,10 @@ export const destinations: Destination[] = [
         "id": "berinag"
       }
     ],
-    "image": "/images/destinations/munsiyari_user.png",
+    "image": "/images/destinations/munsiyari.jpg",
     "description": "Gateway to the Johar Valley, known for Panchachuli views and trekking routes."
   },
+  
   {
     "id": "pithoragarh",
     "name": "Pithoragarh",
@@ -854,9 +865,10 @@ export const destinations: Destination[] = [
         "id": "champawat"
       }
     ],
-    "image": "/images/best/pithoragarh.jpg",
+    "image": "/images/destinations/pithoragarh.jpg",
     "description": "Border district town known for forts, hills, caves, and as a gateway to higher Himalayan routes."
   },
+  
   {
     "id": "berinag",
     "name": "Berinag",
@@ -923,9 +935,10 @@ export const destinations: Destination[] = [
         "id": "pithoragarh"
       }
     ],
-    "image": "/images/destinations/berinag_fetched.jpg",
+    "image": "/images/destinations/berinag.jpg",
     "description": "Quiet hill destination known for tea gardens and Himalayan views."
   },
+  
   {
     "id": "lohaghat",
     "name": "Lohaghat",
@@ -997,9 +1010,10 @@ export const destinations: Destination[] = [
         "id": "tanakpur"
       }
     ],
-    "image": "/images/destinations/lohaghat_fetched.jpg",
+    "image": "/images/destinations/lohaghat.jpg",
     "description": "Quiet scenic town in eastern Kumaon known for heritage, forests, and relaxed travel."
   },
+  
   {
     "id": "champawat",
     "name": "Champawat",
@@ -1066,9 +1080,10 @@ export const destinations: Destination[] = [
         "id": "tanakpur"
       }
     ],
-    "image": "/images/best/champawat.jpg",
+    "image": "/images/destinations/champawat.jpg",
     "description": "Historic Chand dynasty center known for temples and old Kumaoni heritage."
   },
+  
   {
     "id": "rishikesh",
     "name": "Rishikesh",
@@ -1143,9 +1158,10 @@ export const destinations: Destination[] = [
         "id": "tehri"
       }
     ],
-    "image": "/images/destinations/rishikesh_user.png",
+    "image": "/images/destinations/rishikesh.jpg",
     "description": "Yoga capital on the Ganges, known for meditation, rafting, temples, and iconic suspension bridges."
   },
+  
   {
     "id": "mussoorie",
     "name": "Mussoorie",
@@ -1223,9 +1239,10 @@ export const destinations: Destination[] = [
         "id": "dehradun"
       }
     ],
-    "image": "/images/destinations/mussoorie_user.png",
+    "image": "/images/destinations/mussoorie.jpg",
     "description": "Classic hill station known for colonial charm, viewpoints, waterfalls, and nearby Landour."
   },
+  
   {
     "id": "dehradun",
     "name": "Dehradun",
@@ -1301,9 +1318,10 @@ export const destinations: Destination[] = [
         "id": "haridwar"
       }
     ],
-    "image": "/images/destinations/dehradun_fetched.jpg",
+    "image": "/images/destinations/dehradun.jpg",
     "description": "Capital city and transport hub known for caves, monasteries, colonial institutions, and food."
   },
+  
   {
     "id": "haridwar",
     "name": "Haridwar",
@@ -1375,9 +1393,10 @@ export const destinations: Destination[] = [
         "id": "dehradun"
       }
     ],
-    "image": "/images/destinations/haridwar_user.png",
+    "image": "/images/destinations/haridwar.jpg",
     "description": "Major Ganga pilgrimage city known for Har Ki Pauri, temple circuits, and Kumbh traditions."
   },
+  
   {
     "id": "auli",
     "name": "Auli",
@@ -1450,9 +1469,10 @@ export const destinations: Destination[] = [
         "id": "valley-of-flowers"
       }
     ],
-    "image": "/images/destinations/auli_user.png",
+    "image": "/images/destinations/auli.jpg",
     "description": "Himalayan ski resort known for ropeway rides, winter sports, and bugyal landscapes."
   },
+  
   {
     "id": "joshimath",
     "name": "Joshimath",
@@ -1529,9 +1549,10 @@ export const destinations: Destination[] = [
         "id": "hemkund-sahib"
       }
     ],
-    "image": "/images/destinations/joshimath_fetched.jpg",
+    "image": "/images/destinations/joshimath.jpg",
     "description": "Important base town for Auli, Badrinath, Valley of Flowers, and Hemkund Sahib."
   },
+  
   {
     "id": "badrinath",
     "name": "Badrinath",
@@ -1605,9 +1626,10 @@ export const destinations: Destination[] = [
         "id": "auli"
       }
     ],
-    "image": "/images/destinations/badrinath_user.png",
+    "image": "/images/destinations/badrinath.jpg",
     "description": "Sacred Vishnu temple town and one of the Char Dham pilgrimage sites."
   },
+  
   {
     "id": "valley-of-flowers",
     "name": "Valley of Flowers",
@@ -1682,9 +1704,10 @@ export const destinations: Destination[] = [
         "id": "auli"
       }
     ],
-    "image": "/images/destinations/valley-of-flowers_user.png",
+    "image": "/images/destinations/valley-of-flowers.jpg",
     "description": "UNESCO alpine valley known for seasonal wildflower bloom and high-altitude trekking."
   },
+  
   {
     "id": "hemkund-sahib",
     "name": "Hemkund Sahib",
@@ -1756,9 +1779,10 @@ export const destinations: Destination[] = [
         "id": "govindghat"
       }
     ],
-    "image": "/images/garhwal/chamoli/hemkund-sahib.jpg",
+    "image": "/images/destinations/hemkund-sahib.jpg",
     "description": "High-altitude Sikh pilgrimage destination reached by trek from Ghangaria."
   },
+  
   {
     "id": "kedarnath",
     "name": "Kedarnath",
@@ -1836,9 +1860,10 @@ export const destinations: Destination[] = [
         "id": "ukhimath"
       }
     ],
-    "image": "/images/destinations/kedarnath_user.png",
+    "image": "/images/destinations/kedarnath.jpg",
     "description": "Sacred Himalayan temple town known for Kedarnath Temple and pilgrimage trek from Gaurikund."
   },
+  
   {
     "id": "chopta",
     "name": "Chopta",
@@ -1913,9 +1938,10 @@ export const destinations: Destination[] = [
         "id": "guptkashi"
       }
     ],
-    "image": "/images/destinations/chopta_user.png",
+    "image": "/images/destinations/chopta.jpg",
     "description": "High meadow region and trek base for Tungnath and Chandrashila."
   },
+  
   {
     "id": "ukhimath",
     "name": "Ukhimath",
@@ -1987,9 +2013,10 @@ export const destinations: Destination[] = [
         "id": "deoria-tal"
       }
     ],
-    "image": "/images/best/ukhimath.jpg",
+    "image": "/images/destinations/ukhimath.jpg",
     "description": "Religious town and winter seat of Kedarnath deity, also a base for Chopta routes."
   },
+  
   {
     "id": "gangotri",
     "name": "Gangotri",
@@ -2058,9 +2085,10 @@ export const destinations: Destination[] = [
         "id": "uttarkashi"
       }
     ],
-    "image": "/images/destinations/gangotri_user.png",
+    "image": "/images/destinations/gangotri.jpg",
     "description": "Sacred Ganga source pilgrimage town and trek base for Gaumukh."
   },
+  
   {
     "id": "yamunotri",
     "name": "Yamunotri",
@@ -2130,9 +2158,10 @@ export const destinations: Destination[] = [
         "id": "uttarkashi"
       }
     ],
-    "image": "/images/destinations/yamunotri_user.png",
+    "image": "/images/destinations/yamunotri.jpg",
     "description": "Source shrine of the Yamuna and an important Char Dham stop reached via trek from Janki Chatti."
   },
+  
   {
     "id": "tehri-lake",
     "name": "Tehri Lake",
@@ -2204,9 +2233,10 @@ export const destinations: Destination[] = [
         "id": "dhanaulti"
       }
     ],
-    "image": "/images/destinations/tehri-lake_distinct_wiki.jpg",
+    "image": "/images/destinations/tehri-lake.jpg",
     "description": "Reservoir destination known for water sports, dam views, and panoramic landscapes."
   },
+  
   {
     "id": "kanatal",
     "name": "Kanatal",
@@ -2279,9 +2309,10 @@ export const destinations: Destination[] = [
         "id": "tehri-lake"
       }
     ],
-    "image": "/images/best/kanatal.jpg",
+    "image": "/images/destinations/kanatal.jpg",
     "description": "Quiet high-altitude retreat known for apple orchards, camps, and forest walks."
   },
+  
   {
     "id": "dhanaulti",
     "name": "Dhanaulti",
@@ -2349,9 +2380,10 @@ export const destinations: Destination[] = [
         "id": "kanatal"
       }
     ],
-    "image": "/images/destinations/dhanaulti_fetched.jpg",
+    "image": "/images/destinations/dhanaulti.jpg",
     "description": "Cool hill retreat near Mussoorie known for eco parks and relaxed mountain views."
   },
+  
   {
     "id": "khirsu",
     "name": "Khirsu",
@@ -2422,9 +2454,10 @@ export const destinations: Destination[] = [
         "id": "srinagar-garhwal"
       }
     ],
-    "image": "/images/garhwal/pauri-garhwal/khirsu.jpg",
+    "image": "/images/destinations/khirsu.jpg",
     "description": "Quiet hill station with village walks, mountain views, and Garhwali cultural atmosphere."
   },
+  
   {
     "id": "lansdowne",
     "name": "Lansdowne",
@@ -2493,9 +2526,10 @@ export const destinations: Destination[] = [
         "id": "khirsu"
       }
     ],
-    "image": "/images/garhwal/pauri-garhwal/lansdowne.jpg",
+    "image": "/images/destinations/lansdowne.jpg",
     "description": "Colonial cantonment hill station known for pine forests and relaxed short trips."
   },
+  
   {
     "id": "bhowali",
     "name": "Bhowali",
@@ -2560,9 +2594,10 @@ export const destinations: Destination[] = [
         "id": "bhimtal"
       }
     ],
-    "image": "/images/destinations/bhowali_fetched.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "A major fruit market and a scenic junction town in the Kumaon hills."
   },
+  
   {
     "id": "pangot",
     "name": "Pangot",
@@ -2624,9 +2659,10 @@ export const destinations: Destination[] = [
         "id": "nainital"
       }
     ],
-    "image": "/images/destinations/pangot_unsplash.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "A small and picturesque hamlet famous for its rich birdlife and dense forests."
   },
+  
   {
     "id": "ramnagar",
     "name": "Ramnagar",
@@ -2691,9 +2727,10 @@ export const destinations: Destination[] = [
         "id": "kaladhungi"
       }
     ],
-    "image": "/images/destinations/ramnagar_unsplash.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "The gateway to Jim Corbett National Park, situated on the banks of the Kosi River."
   },
+  
   {
     "id": "kaladhungi",
     "name": "Kaladhungi",
@@ -2753,9 +2790,10 @@ export const destinations: Destination[] = [
         "id": "ramnagar"
       }
     ],
-    "image": "/images/destinations/kaladhungi_fetched.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "A quaint town known for the Jim Corbett Museum, located in his former winter home."
   },
+  
   {
     "id": "ranikhet",
     "name": "Ranikhet",
@@ -2825,9 +2863,10 @@ export const destinations: Destination[] = [
         "id": "kausani"
       }
     ],
-    "image": "/images/destinations/ranikhet_fetched.jpg",
+    "image": "/images/destinations/archetype_village.jpg",
     "description": "A serene cantonment town offering panoramic views of the Himalayas and lush green forests."
   },
+  
   {
     "id": "bageshwar",
     "name": "Bageshwar",
@@ -2893,9 +2932,10 @@ export const destinations: Destination[] = [
         "id": "almora"
       }
     ],
-    "image": "/images/destinations/bageshwar_unsplash.jpg",
+    "image": "/images/destinations/archetype_nature.jpg",
     "description": "A holy city situated at the confluence of Saryu and Gomti rivers, famous for the Bagnath Temple."
   },
+  
   {
     "id": "tanakpur",
     "name": "Tanakpur",
@@ -2961,9 +3001,10 @@ export const destinations: Destination[] = [
         "id": "lohaghat"
       }
     ],
-    "image": "/images/destinations/tanakpur_unsplash.jpg",
+    "image": "/images/destinations/archetype_nature.jpg",
     "description": "A town on the banks of the Sharda River, known as the gateway to the Purnagiri Temple."
   },
+  
   {
     "id": "tehri",
     "name": "New Tehri",
@@ -3031,9 +3072,10 @@ export const destinations: Destination[] = [
         "id": "kanatal"
       }
     ],
-    "image": "/images/destinations/tehri_unsplash.jpg",
+    "image": "/images/destinations/tehri-lake.jpg",
     "description": "A modern town built to relocate the residents of Old Tehri, overlooking the massive Tehri Dam."
   },
+  
   {
     "id": "govindghat",
     "name": "Govindghat",
@@ -3101,9 +3143,10 @@ export const destinations: Destination[] = [
         "id": "joshimath"
       }
     ],
-    "image": "/images/destinations/govindghat_fetched.jpg",
+    "image": "/images/destinations/archetype_village.jpg",
     "description": "A vital transit hub and base camp for pilgrims and trekkers heading to Hemkund Sahib and the Valley of Flowers."
   },
+  
   {
     "id": "mana",
     "name": "Mana Village",
@@ -3165,9 +3208,10 @@ export const destinations: Destination[] = [
         "id": "badrinath"
       }
     ],
-    "image": "/images/destinations/mana_unsplash.jpg",
+    "image": "/images/destinations/archetype_village.jpg",
     "description": "Known as the last Indian village before the Tibet border, steeped in Mahabharata mythology."
   },
+  
   {
     "id": "guptkashi",
     "name": "Guptkashi",
@@ -3235,9 +3279,10 @@ export const destinations: Destination[] = [
         "id": "ukhimath"
       }
     ],
-    "image": "/images/destinations/guptkashi_unsplash.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "A significant religious town housing the ancient Vishwanath Temple, serving as a major stopover for Kedarnath pilgrims."
   },
+  
   {
     "id": "sonprayag",
     "name": "Sonprayag",
@@ -3297,9 +3342,10 @@ export const destinations: Destination[] = [
         "id": "guptkashi"
       }
     ],
-    "image": "/images/destinations/sonprayag_unsplash.jpg",
+    "image": "/images/destinations/archetype_village.jpg",
     "description": "A holy confluence and the main transit point where pilgrims switch to local transport for Gaurikund."
   },
+  
   {
     "id": "deoria-tal",
     "name": "Deoria Tal",
@@ -3363,9 +3409,10 @@ export const destinations: Destination[] = [
         "id": "ukhimath"
       }
     ],
-    "image": "/images/destinations/deoria-tal_fetched.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "A pristine emerald lake offering mesmerizing reflections of the Chaukhamba peaks."
   },
+  
   {
     "id": "harsil",
     "name": "Harsil",
@@ -3432,9 +3479,10 @@ export const destinations: Destination[] = [
         "id": "uttarkashi"
       }
     ],
-    "image": "/images/destinations/harsil_unsplash.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "An unspoiled and hidden jewel of Uttarakhand, famous for its apple orchards and the Bhagirathi river."
   },
+  
   {
     "id": "uttarkashi",
     "name": "Uttarkashi",
@@ -3502,9 +3550,10 @@ export const destinations: Destination[] = [
         "id": "harsil"
       }
     ],
-    "image": "/images/destinations/uttarkashi_unsplash.jpg",
+    "image": "/images/destinations/archetype_village.jpg",
     "description": "A holy town on the banks of the Bhagirathi river, home to the famous Vishwanath Temple and NIM."
   },
+  
   {
     "id": "barkot",
     "name": "Barkot",
@@ -3564,9 +3613,10 @@ export const destinations: Destination[] = [
         "id": "yamunotri"
       }
     ],
-    "image": "/images/destinations/barkot_unsplash.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "A scenic town offering magnificent views of the Bandarpoonch peak, serving as a base for Yamunotri."
   },
+  
   {
     "id": "pauri",
     "name": "Pauri",
@@ -3634,9 +3684,10 @@ export const destinations: Destination[] = [
         "id": "srinagar-garhwal"
       }
     ],
-    "image": "/images/destinations/pauri_fetched.jpg",
+    "image": "/images/destinations/archetype_village.jpg",
     "description": "The district headquarters offering breathtaking, wide-angle views of the snow-capped Himalayan peaks."
   },
+  
   {
     "id": "srinagar-garhwal",
     "name": "Srinagar Garhwal",
@@ -3705,9 +3756,10 @@ export const destinations: Destination[] = [
         "id": "rishikesh"
       }
     ],
-    "image": "/images/destinations/srinagar-garhwal_unsplash.jpg",
+    "image": "/images/destinations/archetype_spiritual.jpg",
     "description": "The largest town in the Garhwal Hills, situated on the banks of the Alaknanda River."
   },
+  
   {
     "id": "kotdwar",
     "name": "Kotdwar",
@@ -3766,7 +3818,7 @@ export const destinations: Destination[] = [
         "id": "lansdowne"
       }
     ],
-    "image": "/images/destinations/kotdwar_unsplash.jpg",
+    "image": "/images/destinations/archetype_village.jpg",
     "description": "Known as the Gateway to Garhwal, famous for the Sidhbali Hanuman Temple."
   }
 ];

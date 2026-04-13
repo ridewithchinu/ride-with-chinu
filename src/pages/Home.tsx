@@ -22,7 +22,7 @@ export function Home() {
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <LazyImage 
-            src="/images/destinations/nainital_user.png" 
+            src="/images/destinations/naukuchiatal.jpg" 
             alt="Uttarakhand Mountains" 
             className="w-full h-full object-cover"
           />
