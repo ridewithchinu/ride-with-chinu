@@ -2,10 +2,15 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, MessageSquare, Clock, Globe } from 'lucide-react';
 import { LazyImage } from '@/components/ui/LazyImage';
+import { SEO } from '@/components/SEO';
 
 export function Contact() {
   return (
     <div className="flex flex-col gap-16 pb-16">
+      <SEO 
+        title="Contact Us"
+        description="Get in touch with RideWithChinu for bookings, inquiries, or custom Uttarakhand travel plans. We are available 24/7 via WhatsApp and Email."
+      />
       {/* Hero Section */}
       <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

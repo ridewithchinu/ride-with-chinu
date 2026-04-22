@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { SEO } from '@/components/SEO';
 import { Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { LazyImage } from '@/components/ui/LazyImage';
@@ -32,6 +33,10 @@ export function Destinations() {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <SEO 
+        title="Explore Destinations"
+        description="Browse our curated collection of Uttarakhand's best destinations. From hilltop retreats like Mussoorie to spiritual havens like Rishikesh."
+      />
       <div className="mb-16 text-center max-w-4xl mx-auto">
         <motion.h1 
           initial={{ opacity: 0, scale: 0.9 }}

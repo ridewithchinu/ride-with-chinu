@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { SEO } from '@/components/SEO';
 import { Check, Shield, Mountain, Sunrise, CloudRain, Snowflake, Camera } from 'lucide-react';
 
 export function PackingList() {
@@ -102,6 +103,10 @@ export function PackingList() {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <SEO 
+        title="Packing Guide & Travel Essentials"
+        description="Comprehensive packing list for Uttarakhand travels. Essential gear, spiritual etiquette, and seasonal clothing advice for a comfortable journey."
+      />
       <div className="mb-12 text-center max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">Packing Guide</h1>
         <p className="text-lg text-muted-foreground">

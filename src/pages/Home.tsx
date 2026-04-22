@@ -6,10 +6,9 @@ import { destinations, categories } from '@/data/destinations';
 import { YatraSection } from '@/components/YatraSection';
 import { ArrowRight, Map, Mountain, Sunrise, Tent } from 'lucide-react';
 
+import { SEO } from '@/components/SEO';
+
 export function Home() {
-  const pilgrimIds = ['badrinath', 'kedarnath', 'gangotri', 'yamunotri', 'haridwar', 'rishikesh'];
-  const featuredDestinations = destinations.filter(d => pilgrimIds.includes(d.id));
-  
   const categoryIcons: Record<string, React.ReactNode> = {
     "Hill Stations": <Mountain className="w-6 h-6" />,
     "Spiritual / Pilgrimage": <Sunrise className="w-6 h-6" />,
@@ -17,8 +16,51 @@ export function Home() {
     "Lakes and Scenic Retreats": <Map className="w-6 h-6" />,
   };
 
+  const pilgrimIds = ['badrinath', 'kedarnath', 'gangotri', 'yamunotri', 'haridwar', 'rishikesh'];
+  const featuredDestinations = destinations.filter(d => pilgrimIds.includes(d.id));
+
+  const yatraStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Char Dham & Do Dham Yatra Planner | RideWithChinu",
+    "description": "Explore interactive itineraries and plan your perfect Char Dham or Do Dham yatra in Uttarakhand.",
+    "mainEntity": [
+      {
+        "@type": "TouristTrip",
+        "name": "Char Dham Yatra",
+        "description": "Traditional Himalayan pilgrimage covering Yamunotri, Gangotri, Kedarnath, and Badrinath.",
+        "itinerary": {
+          "@type": "ItemList",
+          "itemListElement": [
+            { "@type": "TouristDestination", "name": "Yamunotri" },
+            { "@type": "TouristDestination", "name": "Gangotri" },
+            { "@type": "TouristDestination", "name": "Kedarnath" },
+            { "@type": "TouristDestination", "name": "Badrinath" }
+          ]
+        }
+      },
+      {
+        "@type": "TouristTrip",
+        "name": "Do Dham Yatra",
+        "description": "Pilgrimage covering the two most sacred shrines: Kedarnath and Badrinath.",
+        "itinerary": {
+          "@type": "ItemList",
+          "itemListElement": [
+            { "@type": "TouristDestination", "name": "Kedarnath" },
+            { "@type": "TouristDestination", "name": "Badrinath" }
+          ]
+        }
+      }
+    ]
+  };
+
   return (
     <div className="flex flex-col gap-16 pb-16">
+      <SEO 
+        title="Char Dham & Do Dham Yatra | Uttarakhand Travel Guide"
+        description="Experience the divine journey of Char Dham and Do Dham. Plan your pilgrimage with expert-led itineraries, local insights, and reliable transport in Uttarakhand."
+        structuredData={yatraStructuredData}
+      />
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

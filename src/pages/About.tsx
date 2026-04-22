@@ -2,10 +2,15 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Heart, Shield, Phone, Sparkles, Award, Users, Mail } from 'lucide-react';
 import { LazyImage } from '@/components/ui/LazyImage';
+import { SEO } from '@/components/SEO';
 
 export function About() {
   return (
     <div className="flex flex-col gap-16 pb-16">
+      <SEO 
+        title="About Us"
+        description="Learn about RideWithChinu, your trusted local travel partner in Uttarakhand. Crafting soul-stirring journeys since 2018."
+      />
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[450px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

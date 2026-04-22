@@ -23,6 +23,7 @@ function YatraToggle({
           <button
             key={type}
             onClick={() => onChange(type)}
+            aria-label={`Select ${label} pilgrimage`}
             className={cn(
               'relative z-10 px-5 py-2 rounded-full text-sm font-bold transition-all duration-300',
               isActive ? 'text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
@@ -214,6 +215,7 @@ function YatraDetailModal({
           {/* Close */}
           <button
             onClick={onClose}
+            aria-label="Close detailed view"
             className="absolute top-4 right-4 p-2 rounded-full bg-black/50 backdrop-blur text-white hover:bg-black/70 transition-colors"
           >
             <X className="w-5 h-5" />
@@ -494,6 +496,7 @@ function YatraCarousel({
         <button
           onClick={() => goTo(current - 1)}
           disabled={current === 0}
+          aria-label="Previous pilgrimage site"
           className="p-2.5 rounded-full border border-border hover:bg-muted disabled:opacity-30 transition-all"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -504,6 +507,7 @@ function YatraCarousel({
             <button
               key={i}
               onClick={() => goTo(i)}
+              aria-label={`Go to ${nodes[i].name}`}
               className={cn(
                 'rounded-full transition-all duration-300',
                 i === current
@@ -517,6 +521,7 @@ function YatraCarousel({
         <button
           onClick={() => goTo(current + 1)}
           disabled={current === nodes.length - 1}
+          aria-label="Next pilgrimage site"
           className="p-2.5 rounded-full border border-border hover:bg-muted disabled:opacity-30 transition-all"
         >
           <ChevronRight className="w-5 h-5" />
@@ -563,7 +568,7 @@ export function YatraSection() {
   return (
     <>
       {/* Section */}
-      <section className="relative overflow-hidden">
+      <section id="yatra-section" aria-labelledby="yatra-heading" className="relative overflow-hidden">
         {/* Ambient gradient background */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -584,7 +589,7 @@ export function YatraSection() {
               <Star className="w-3.5 h-3.5 fill-current" /> Sacred Yatras
             </span>
 
-            <h2 className="text-3xl md:text-4xl font-heading font-extrabold mb-3 tracking-tight">
+            <h2 id="yatra-heading" className="text-3xl md:text-4xl font-heading font-extrabold mb-3 tracking-tight">
               Himalayan Pilgrimage Circuits
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base mb-8">

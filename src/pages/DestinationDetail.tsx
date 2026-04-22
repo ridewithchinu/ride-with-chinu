@@ -7,6 +7,7 @@ import {
   MapPin, Calendar, Mountain, Plane, Train, Car, 
   CheckCircle2, AlertTriangle, Utensils, Bed, Info, ArrowLeft
 } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 export function DestinationDetail() {
   const { id } = useParams<{ id: string }>();
@@ -15,6 +16,7 @@ export function DestinationDetail() {
   if (!destination) {
     return (
       <div className="container mx-auto px-4 py-20 text-center">
+        <SEO title="Destination Not Found" />
         <h1 className="text-3xl font-heading font-bold mb-4">Destination Not Found</h1>
         <Link to="/destinations" className="text-primary hover:underline flex items-center justify-center gap-2">
           <ArrowLeft className="w-4 h-4" /> Back to Destinations
@@ -23,8 +25,33 @@ export function DestinationDetail() {
     );
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": destination.name,
+    "description": destination.description,
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": destination.district,
+        "addressRegion": "Uttarakhand",
+        "addressCountry": "IN"
+      }
+    },
+    "image": destination.image,
+    "url": `https://ride-with-chinu.vercel.app/destinations/${destination.id}`
+  };
+
   return (
     <div className="pb-20">
+      <SEO 
+        title={`${destination.name} Travel Guide`}
+        description={`Explore ${destination.name} in ${destination.district}, Uttarakhand. Best time to visit, top attractions, and how to reach.`}
+        ogType="article"
+        ogImage={destination.image}
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] flex items-end pb-12">
         <div className="absolute inset-0 z-0">
