@@ -54,13 +54,45 @@ export function Home() {
     ]
   };
 
+  const orgStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RideWithChinu",
+    "url": "https://ride-with-chinu.vercel.app/",
+    "logo": "https://ride-with-chinu.vercel.app/logo.png",
+    "sameAs": [
+      "https://www.youtube.com/@RideWithChinu",
+      "https://www.instagram.com/ridewithchinu"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+917818841169",
+      "contactType": "customer service",
+      "availableLanguage": ["en", "Hindi"]
+    }
+  };
+
+  const searchStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://ride-with-chinu.vercel.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://ride-with-chinu.vercel.app/destinations?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <div className="flex flex-col gap-16 pb-16">
       <SEO 
         title="Char Dham & Do Dham Yatra | Uttarakhand Travel Guide"
         description="Experience the divine journey of Char Dham and Do Dham. Plan your pilgrimage with expert-led itineraries, local insights, and reliable transport in Uttarakhand."
         keywords="Char Dham Yatra, Do Dham Yatra, Uttarakhand tourism, Badrinath travel guide, Kedarnath itinerary, Gangotri, Yamunotri, Himalayan pilgrimage, spiritual travel India, car rental Uttarakhand"
-        structuredData={yatraStructuredData}
+        structuredData={[yatraStructuredData, orgStructuredData, searchStructuredData]}
       />
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
