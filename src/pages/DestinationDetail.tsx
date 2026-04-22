@@ -25,6 +25,8 @@ export function DestinationDetail() {
     );
   }
 
+  const destinationUrl = `https://ride-with-chinu.vercel.app/destinations/${destination.id}`;
+  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "TouristDestination",
@@ -40,7 +42,32 @@ export function DestinationDetail() {
       }
     },
     "image": destination.image,
-    "url": `https://ride-with-chinu.vercel.app/destinations/${destination.id}`
+    "url": destinationUrl
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ride-with-chinu.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Destinations",
+        "item": "https://ride-with-chinu.vercel.app/destinations"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": destination.name,
+        "item": destinationUrl
+      }
+    ]
   };
 
   return (
@@ -48,9 +75,10 @@ export function DestinationDetail() {
       <SEO 
         title={`${destination.name} Travel Guide`}
         description={`Explore ${destination.name} in ${destination.district}, Uttarakhand. Best time to visit, top attractions, and how to reach.`}
+        keywords={`${destination.name}, ${destination.district}, Uttarakhand travel, travel guide, things to do in ${destination.name}, ${destination.category.join(", ")}`}
         ogType="article"
         ogImage={destination.image}
-        structuredData={structuredData}
+        structuredData={[structuredData, breadcrumbData]}
       />
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] flex items-end pb-12">

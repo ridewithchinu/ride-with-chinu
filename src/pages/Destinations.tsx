@@ -108,7 +108,7 @@ export function Destinations() {
               <Link to={`/destinations/${dest.id}`} className="block relative h-64 overflow-hidden">
                 <LazyImage 
                   src={dest.image} 
-                  alt={dest.name} 
+                  alt={`${dest.name} - ${dest.district} Tourism`} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 flex flex-wrap gap-2">

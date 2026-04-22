@@ -4,15 +4,17 @@ import { useLocation } from 'react-router-dom';
 interface SEOProps {
   title?: string;
   description?: string;
+  keywords?: string;
   canonical?: string;
   ogType?: string;
   ogImage?: string;
-  structuredData?: object;
+  structuredData?: object | object[];
 }
 
 export function SEO({
   title,
   description,
+  keywords,
   canonical,
   ogType = 'website',
   ogImage = 'https://ride-with-chinu.vercel.app/og-image.jpg',
@@ -31,6 +33,17 @@ export function SEO({
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', description || "Explore the divine beauty of Uttarakhand with RideWithChinu. Expert-led Char Dham, Do Dham, and adventure yatras.");
+    }
+
+    // Update Keywords
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords && keywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.setAttribute('name', 'keywords');
+      document.head.appendChild(metaKeywords);
+    }
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', keywords || "Uttarakhand, travel, Char Dham, India pilgrimage, Himalayan tours");
     }
 
     // Update Canonical
@@ -56,17 +69,18 @@ export function SEO({
     if (ogImg) ogImg.setAttribute('content', ogImage);
 
     // Structured Data (JSON-LD)
-    const existingScript = document.getElementById('json-ld-seo');
-    if (existingScript) {
-      existingScript.remove();
-    }
+    const existingScripts = document.querySelectorAll('script[id^="json-ld-seo"]');
+    existingScripts.forEach(s => s.remove());
 
     if (structuredData) {
-      const script = document.createElement('script');
-      script.id = 'json-ld-seo';
-      script.type = 'application/ld+json';
-      script.innerHTML = JSON.stringify(structuredData);
-      document.head.appendChild(script);
+      const dataArray = Array.isArray(structuredData) ? structuredData : [structuredData];
+      dataArray.forEach((data, index) => {
+        const script = document.createElement('script');
+        script.id = `json-ld-seo-${index}`;
+        script.type = 'application/ld+json';
+        script.innerHTML = JSON.stringify(data);
+        document.head.appendChild(script);
+      });
     }
 
     return () => {

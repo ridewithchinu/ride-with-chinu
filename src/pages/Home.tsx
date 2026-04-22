@@ -59,6 +59,7 @@ export function Home() {
       <SEO 
         title="Char Dham & Do Dham Yatra | Uttarakhand Travel Guide"
         description="Experience the divine journey of Char Dham and Do Dham. Plan your pilgrimage with expert-led itineraries, local insights, and reliable transport in Uttarakhand."
+        keywords="Char Dham Yatra, Do Dham Yatra, Uttarakhand tourism, Badrinath travel guide, Kedarnath itinerary, Gangotri, Yamunotri, Himalayan pilgrimage, spiritual travel India, car rental Uttarakhand"
         structuredData={yatraStructuredData}
       />
       {/* Hero Section */}
@@ -66,7 +67,7 @@ export function Home() {
         <div className="absolute inset-0 z-0">
           <LazyImage 
             src="/images/destinations/naukuchiatal.jpg" 
-            alt="Uttarakhand Mountains" 
+            alt="Majestic mountains and scenic landscape of Uttarakhand" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -177,7 +178,7 @@ export function Home() {
               <Link to={`/destinations/${dest.id}`} className="block relative h-64 overflow-hidden">
                 <LazyImage 
                   src={dest.image} 
-                  alt={dest.name} 
+                  alt={`${dest.name} - ${dest.district}, Uttarakhand travel guide`} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 flex flex-wrap gap-2">
