@@ -1301,7 +1301,7 @@ export const destinations: Destination[] = [
         "id": "haridwar"
       }
     ],
-    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bffc907a844ca938030ba249c2a4dc0aa2777498.jpg",
+    "image": "/images/destinations/dehradun.jpg",
     "description": "Capital city and transport hub known for caves, monasteries, colonial institutions, and food."
   },
   {
@@ -1682,7 +1682,7 @@ export const destinations: Destination[] = [
         "id": "auli"
       }
     ],
-    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/aaea4f859f1604dd479bd10e90f35361735e994e.jpg",
+    "image": "/images/destinations/valley-of-flowers.jpg",
     "description": "UNESCO alpine valley known for seasonal wildflower bloom and high-altitude trekking."
   },
   {
@@ -1756,7 +1756,7 @@ export const destinations: Destination[] = [
         "id": "govindghat"
       }
     ],
-    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/056e1faf596ad67bb5719c11c52af25187af3240.jpg",
+    "image": "/images/destinations/hemkund-sahib.jpg",
     "description": "High-altitude Sikh pilgrimage destination reached by trek from Ghangaria."
   },
   {
@@ -1987,7 +1987,7 @@ export const destinations: Destination[] = [
         "id": "deoria-tal"
       }
     ],
-    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5fe2fdb4e7312a37b8e4f50c5f1b43fa2fbe1713.jpg",
+    "image": "/images/destinations/ukhimath.jpg",
     "description": "Religious town and winter seat of Kedarnath deity, also a base for Chopta routes."
   },
   {
@@ -2204,7 +2204,7 @@ export const destinations: Destination[] = [
         "id": "dhanaulti"
       }
     ],
-    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c3d11583d4ec9d6ef426ad0eba987e0ee99a4f83.jpg",
+    "image": "/images/destinations/tehri-lake.jpg",
     "description": "Reservoir destination known for water sports, dam views, and panoramic landscapes."
   },
   {
@@ -2422,7 +2422,7 @@ export const destinations: Destination[] = [
         "id": "srinagar-garhwal"
       }
     ],
-    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2e17729233a723bb156a2c7d0452ad325937e57b.jpg",
+    "image": "/images/destinations/khirsu.jpg",
     "description": "Quiet hill station with village walks, mountain views, and Garhwali cultural atmosphere."
   },
   {
@@ -2493,7 +2493,7 @@ export const destinations: Destination[] = [
         "id": "khirsu"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Lansdowne_Landscape.jpg",
+    "image": "/images/destinations/lansdowne.jpg",
     "description": "Colonial cantonment hill station known for pine forests and relaxed short trips."
   },
   {
@@ -2691,7 +2691,7 @@ export const destinations: Destination[] = [
         "id": "kaladhungi"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Kosi_River%2C_Jim_Corbett_National_Park%2C_Ramnagar%2C_Uttarakhand.jpeg",
+    "image": "/images/destinations/jim-corbett.jpg",
     "description": "The gateway to Jim Corbett National Park, situated on the banks of the Kosi River."
   },
   {
@@ -3235,7 +3235,7 @@ export const destinations: Destination[] = [
         "id": "ukhimath"
       }
     ],
-    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d47fa708164bcb5110cd601b7c585cad3bd11d9b.jpg",
+    "image": "/images/destinations/guptkashi.jpg",
     "description": "A significant religious town housing the ancient Vishwanath Temple, serving as a major stopover for Kedarnath pilgrims."
   },
   {
