@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { LazyImage } from '@/components/ui/LazyImage';
 import { destinations, categories } from '@/data/destinations';
+import { YatraSection } from '@/components/YatraSection';
 import { ArrowRight, Map, Mountain, Sunrise, Tent } from 'lucide-react';
 
 export function Home() {
@@ -30,36 +31,53 @@ export function Home() {
         </div>
         
         <div className="container relative z-10 px-4 text-center text-white">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-5xl md:text-7xl font-heading font-bold mb-6"
-          >
-            Explore Uttarakhand
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-2xl max-w-2xl mx-auto mb-8 text-gray-200"
-          >
-            Discover the Land of Gods. From sacred temples to majestic peaks, your adventure begins here.
-          </motion.p>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="inline-block mb-4 px-4 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-white/20 text-xs md:text-sm font-semibold tracking-widest uppercase"
+          >
+            Welcome to Devbhoomi
+          </motion.div>
+          
+          <motion.h1 
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-6xl md:text-8xl font-heading font-extrabold mb-6 leading-tight tracking-tighter"
+          >
+            Explore <span className="text-secondary drop-shadow-lg">Uttarakhand</span>
+          </motion.h1>
+          
+          <motion.p 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl md:text-3xl max-w-3xl mx-auto mb-10 text-white/90 font-light leading-relaxed text-balance"
+          >
+            Experience the divine serenity and majestic grandeur of the <span className="font-semibold italic text-secondary">Land of Gods</span>.
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link 
               to="/destinations" 
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-medium transition-colors"
+              className="group relative inline-flex items-center gap-3 bg-primary hover:bg-primary-dark text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:shadow-[0_0_30px_rgba(13,148,136,0.5)] active:scale-95 overflow-hidden"
             >
-              Start Exploring <ArrowRight className="w-5 h-5" />
+              <span className="relative z-10">Start Your Adventure</span>
+              <ArrowRight className="w-6 h-6 relative z-10 group-hover:translate-x-1 transition-transform" />
+              <div className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
             </Link>
           </motion.div>
         </div>
       </section>
+
+      {/* Yatra Section */}
+      <YatraSection />
 
       {/* Browse by Category */}
       <section className="container mx-auto px-4">
@@ -74,17 +92,18 @@ export function Home() {
               key={category}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true, amount: 0.05 }}
+              transition={{ duration: 0.4, delay: Math.min(index * 0.1, 0.4) }}
             >
               <Link 
                 to={`/destinations?category=${encodeURIComponent(category)}`}
-                className="flex flex-col items-center justify-center gap-4 p-6 rounded-2xl bg-card border border-border hover:border-primary hover:shadow-lg transition-all text-center h-full group"
+                className="flex flex-col items-center justify-center gap-4 p-8 rounded-[2rem] bg-card border border-border hover:border-primary/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center h-full group relative overflow-hidden"
               >
-                <div className="p-4 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                  {categoryIcons[category] || <Map className="w-6 h-6" />}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
+                <div className="p-5 rounded-3xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-12">
+                  {categoryIcons[category] || <Map className="w-7 h-7 md:w-8 md:h-8" />}
                 </div>
-                <span className="font-medium text-sm md:text-base">{category}</span>
+                <span className="font-bold text-base md:text-lg tracking-tight group-hover:text-primary transition-colors">{category}</span>
               </Link>
             </motion.div>
           ))}
@@ -109,8 +128,8 @@ export function Home() {
               key={dest.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, amount: 0.05 }}
+              transition={{ duration: 0.5, delay: Math.min(index * 0.1, 0.3) }}
               className="group rounded-2xl overflow-hidden bg-card border border-border hover:shadow-xl transition-all flex flex-col"
             >
               <Link to={`/destinations/${dest.id}`} className="block relative h-64 overflow-hidden">
@@ -120,7 +139,7 @@ export function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                  <span className="bg-background/90 backdrop-blur text-foreground text-xs font-medium px-2.5 py-1 rounded-full">
+                  <span className="bg-black/60 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full border border-white/10 shadow-lg">
                     {dest.district} District
                   </span>
                 </div>
@@ -152,7 +171,7 @@ export function Home() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="bg-primary/5 border border-primary/20 rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto"
         >
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4 text-primary-dark dark:text-primary">Travel Responsibly</h2>

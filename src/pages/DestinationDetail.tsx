@@ -84,7 +84,8 @@ export function DestinationDetail() {
                     key={idx}
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0.05 }}
+                    transition={{ duration: 0.3, delay: Math.min(idx * 0.05, 0.3) }}
                     className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border"
                   >
                     <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />

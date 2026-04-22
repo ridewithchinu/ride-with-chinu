@@ -25,7 +25,6 @@ export interface Destination {
   description: string;
 }
 
-
 export const destinations: Destination[] = [
   {
     "id": "nainital",
@@ -118,7 +117,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/nainital.jpg",
     "description": "Popular hill station centered around Naini Lake, known for boating, viewpoints, shopping, and colonial heritage."
   },
-  
   {
     "id": "bhimtal",
     "name": "Bhimtal",
@@ -192,7 +190,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/bhimtal.jpg",
     "description": "Scenic lake town near Nainital known for boating and quieter surroundings."
   },
-  
   {
     "id": "sattal",
     "name": "Sattal",
@@ -266,7 +263,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/sattal.jpg",
     "description": "Cluster of freshwater lakes popular for nature stays and birdwatching."
   },
-  
   {
     "id": "naukuchiatal",
     "name": "Naukuchiatal",
@@ -341,7 +337,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/naukuchiatal.jpg",
     "description": "Nine-cornered lake destination known for peaceful views and adventure activities."
   },
-  
   {
     "id": "jim-corbett",
     "name": "Jim Corbett National Park",
@@ -422,7 +417,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/jim-corbett.jpg",
     "description": "Forested wildlife sanctuary known for Bengal tigers, safaris, river landscapes, and biodiversity."
   },
-  
   {
     "id": "almora",
     "name": "Almora",
@@ -503,7 +497,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/almora.jpg",
     "description": "Cultural center of Kumaon known for temples, ridge views, bazaars, and handicrafts."
   },
-  
   {
     "id": "binsar",
     "name": "Binsar",
@@ -573,7 +566,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/binsar.jpg",
     "description": "Forest sanctuary and scenic retreat known for Himalayan views and quiet stays."
   },
-  
   {
     "id": "jageshwar",
     "name": "Jageshwar",
@@ -641,9 +633,8 @@ export const destinations: Destination[] = [
       }
     ],
     "image": "/images/destinations/jageshwar.jpg",
-    "description": "Historic temple complex in deodar forests, important for Shaivite pilgrimage and heritage tourism."
+    "description": "Step into a world of ancient stone temples nestled in a mystical deodar forest. Jageshwar is a spiritual sanctuary where heritage and nature breathe together in timeless harmony."
   },
-  
   {
     "id": "kausani",
     "name": "Kausani",
@@ -715,7 +706,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/kausani.jpg",
     "description": "Panoramic Himalayan retreat known for sunrise views, tea gardens, and Gandhi heritage."
   },
-  
   {
     "id": "munsiyari",
     "name": "Munsiyari",
@@ -788,7 +778,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/munsiyari.jpg",
     "description": "Gateway to the Johar Valley, known for Panchachuli views and trekking routes."
   },
-  
   {
     "id": "pithoragarh",
     "name": "Pithoragarh",
@@ -868,7 +857,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/pithoragarh.jpg",
     "description": "Border district town known for forts, hills, caves, and as a gateway to higher Himalayan routes."
   },
-  
   {
     "id": "berinag",
     "name": "Berinag",
@@ -936,9 +924,8 @@ export const destinations: Destination[] = [
       }
     ],
     "image": "/images/destinations/berinag.jpg",
-    "description": "Quiet hill destination known for tea gardens and Himalayan views."
+    "description": "A hidden gem in the Kumaon hills, Berinag offers breathtaking views of the snow-clad Himalayas amidst sprawling, aromatic tea gardens. Perfect for those seeking tranquility away from the tourist trails."
   },
-  
   {
     "id": "lohaghat",
     "name": "Lohaghat",
@@ -1011,9 +998,8 @@ export const destinations: Destination[] = [
       }
     ],
     "image": "/images/destinations/lohaghat.jpg",
-    "description": "Quiet scenic town in eastern Kumaon known for heritage, forests, and relaxed travel."
+    "description": "A serene hill station where history and folklore intertwine. Lohaghat is famous for its pine forests, colonial-era architecture, and its proximity to the mystical Abbott Mount."
   },
-  
   {
     "id": "champawat",
     "name": "Champawat",
@@ -1083,7 +1069,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/champawat.jpg",
     "description": "Historic Chand dynasty center known for temples and old Kumaoni heritage."
   },
-  
   {
     "id": "rishikesh",
     "name": "Rishikesh",
@@ -1161,7 +1146,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/rishikesh.jpg",
     "description": "Yoga capital on the Ganges, known for meditation, rafting, temples, and iconic suspension bridges."
   },
-  
   {
     "id": "mussoorie",
     "name": "Mussoorie",
@@ -1242,7 +1226,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/mussoorie.jpg",
     "description": "Classic hill station known for colonial charm, viewpoints, waterfalls, and nearby Landour."
   },
-  
   {
     "id": "dehradun",
     "name": "Dehradun",
@@ -1318,10 +1301,9 @@ export const destinations: Destination[] = [
         "id": "haridwar"
       }
     ],
-    "image": "/images/destinations/dehradun.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bffc907a844ca938030ba249c2a4dc0aa2777498.jpg",
     "description": "Capital city and transport hub known for caves, monasteries, colonial institutions, and food."
   },
-  
   {
     "id": "haridwar",
     "name": "Haridwar",
@@ -1396,7 +1378,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/haridwar.jpg",
     "description": "Major Ganga pilgrimage city known for Har Ki Pauri, temple circuits, and Kumbh traditions."
   },
-  
   {
     "id": "auli",
     "name": "Auli",
@@ -1472,7 +1453,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/auli.jpg",
     "description": "Himalayan ski resort known for ropeway rides, winter sports, and bugyal landscapes."
   },
-  
   {
     "id": "joshimath",
     "name": "Joshimath",
@@ -1552,7 +1532,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/joshimath.jpg",
     "description": "Important base town for Auli, Badrinath, Valley of Flowers, and Hemkund Sahib."
   },
-  
   {
     "id": "badrinath",
     "name": "Badrinath",
@@ -1629,7 +1608,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/badrinath.jpg",
     "description": "Sacred Vishnu temple town and one of the Char Dham pilgrimage sites."
   },
-  
   {
     "id": "valley-of-flowers",
     "name": "Valley of Flowers",
@@ -1704,10 +1682,9 @@ export const destinations: Destination[] = [
         "id": "auli"
       }
     ],
-    "image": "/images/destinations/valley-of-flowers.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/aaea4f859f1604dd479bd10e90f35361735e994e.jpg",
     "description": "UNESCO alpine valley known for seasonal wildflower bloom and high-altitude trekking."
   },
-  
   {
     "id": "hemkund-sahib",
     "name": "Hemkund Sahib",
@@ -1779,10 +1756,9 @@ export const destinations: Destination[] = [
         "id": "govindghat"
       }
     ],
-    "image": "/images/destinations/hemkund-sahib.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/056e1faf596ad67bb5719c11c52af25187af3240.jpg",
     "description": "High-altitude Sikh pilgrimage destination reached by trek from Ghangaria."
   },
-  
   {
     "id": "kedarnath",
     "name": "Kedarnath",
@@ -1863,7 +1839,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/kedarnath.jpg",
     "description": "Sacred Himalayan temple town known for Kedarnath Temple and pilgrimage trek from Gaurikund."
   },
-  
   {
     "id": "chopta",
     "name": "Chopta",
@@ -1941,7 +1916,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/chopta.jpg",
     "description": "High meadow region and trek base for Tungnath and Chandrashila."
   },
-  
   {
     "id": "ukhimath",
     "name": "Ukhimath",
@@ -2013,10 +1987,9 @@ export const destinations: Destination[] = [
         "id": "deoria-tal"
       }
     ],
-    "image": "/images/destinations/ukhimath.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5fe2fdb4e7312a37b8e4f50c5f1b43fa2fbe1713.jpg",
     "description": "Religious town and winter seat of Kedarnath deity, also a base for Chopta routes."
   },
-  
   {
     "id": "gangotri",
     "name": "Gangotri",
@@ -2088,7 +2061,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/gangotri.jpg",
     "description": "Sacred Ganga source pilgrimage town and trek base for Gaumukh."
   },
-  
   {
     "id": "yamunotri",
     "name": "Yamunotri",
@@ -2161,7 +2133,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/yamunotri.jpg",
     "description": "Source shrine of the Yamuna and an important Char Dham stop reached via trek from Janki Chatti."
   },
-  
   {
     "id": "tehri-lake",
     "name": "Tehri Lake",
@@ -2233,10 +2204,9 @@ export const destinations: Destination[] = [
         "id": "dhanaulti"
       }
     ],
-    "image": "/images/destinations/tehri-lake.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c3d11583d4ec9d6ef426ad0eba987e0ee99a4f83.jpg",
     "description": "Reservoir destination known for water sports, dam views, and panoramic landscapes."
   },
-  
   {
     "id": "kanatal",
     "name": "Kanatal",
@@ -2312,7 +2282,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/kanatal.jpg",
     "description": "Quiet high-altitude retreat known for apple orchards, camps, and forest walks."
   },
-  
   {
     "id": "dhanaulti",
     "name": "Dhanaulti",
@@ -2383,7 +2352,6 @@ export const destinations: Destination[] = [
     "image": "/images/destinations/dhanaulti.jpg",
     "description": "Cool hill retreat near Mussoorie known for eco parks and relaxed mountain views."
   },
-  
   {
     "id": "khirsu",
     "name": "Khirsu",
@@ -2454,10 +2422,9 @@ export const destinations: Destination[] = [
         "id": "srinagar-garhwal"
       }
     ],
-    "image": "/images/destinations/khirsu.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2e17729233a723bb156a2c7d0452ad325937e57b.jpg",
     "description": "Quiet hill station with village walks, mountain views, and Garhwali cultural atmosphere."
   },
-  
   {
     "id": "lansdowne",
     "name": "Lansdowne",
@@ -2526,10 +2493,9 @@ export const destinations: Destination[] = [
         "id": "khirsu"
       }
     ],
-    "image": "/images/destinations/lansdowne.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Lansdowne_Landscape.jpg",
     "description": "Colonial cantonment hill station known for pine forests and relaxed short trips."
   },
-  
   {
     "id": "bhowali",
     "name": "Bhowali",
@@ -2594,10 +2560,9 @@ export const destinations: Destination[] = [
         "id": "bhimtal"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/7ce670e4bd0cdb41179b5a9a6ad0382b3e7aa544.jpg",
     "description": "A major fruit market and a scenic junction town in the Kumaon hills."
   },
-  
   {
     "id": "pangot",
     "name": "Pangot",
@@ -2659,10 +2624,9 @@ export const destinations: Destination[] = [
         "id": "nainital"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://picsum.photos/seed/pangot-uttarakhand/1200/800",
     "description": "A small and picturesque hamlet famous for its rich birdlife and dense forests."
   },
-  
   {
     "id": "ramnagar",
     "name": "Ramnagar",
@@ -2727,10 +2691,9 @@ export const destinations: Destination[] = [
         "id": "kaladhungi"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Kosi_River%2C_Jim_Corbett_National_Park%2C_Ramnagar%2C_Uttarakhand.jpeg",
     "description": "The gateway to Jim Corbett National Park, situated on the banks of the Kosi River."
   },
-  
   {
     "id": "kaladhungi",
     "name": "Kaladhungi",
@@ -2790,10 +2753,9 @@ export const destinations: Destination[] = [
         "id": "ramnagar"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
-    "description": "A quaint town known for the Jim Corbett Museum, located in his former winter home."
+    "image": "https://images.unsplash.com/photo-1588667508492-998f5a60e0a5?auto=format&fit=crop&q=80&w=2000",
+    "description": "The threshold of the wild. Visit the historic winter home of Jim Corbett, now a fascinating museum, and start your journey into the heart of India's most famous tiger reserve."
   },
-  
   {
     "id": "ranikhet",
     "name": "Ranikhet",
@@ -2863,10 +2825,9 @@ export const destinations: Destination[] = [
         "id": "kausani"
       }
     ],
-    "image": "/images/destinations/archetype_village.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Ranikhet_in_winters.jpg",
     "description": "A serene cantonment town offering panoramic views of the Himalayas and lush green forests."
   },
-  
   {
     "id": "bageshwar",
     "name": "Bageshwar",
@@ -2932,10 +2893,9 @@ export const destinations: Destination[] = [
         "id": "almora"
       }
     ],
-    "image": "/images/destinations/archetype_nature.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e17934dddb97112da21b681510dea906f4fc6af2.jpg",
     "description": "A holy city situated at the confluence of Saryu and Gomti rivers, famous for the Bagnath Temple."
   },
-  
   {
     "id": "tanakpur",
     "name": "Tanakpur",
@@ -3001,10 +2961,9 @@ export const destinations: Destination[] = [
         "id": "lohaghat"
       }
     ],
-    "image": "/images/destinations/archetype_nature.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/View_of_purnagiri_hills_from_barrage_road_Tanakpur.jpg",
     "description": "A town on the banks of the Sharda River, known as the gateway to the Purnagiri Temple."
   },
-  
   {
     "id": "tehri",
     "name": "New Tehri",
@@ -3072,10 +3031,9 @@ export const destinations: Destination[] = [
         "id": "kanatal"
       }
     ],
-    "image": "/images/destinations/tehri-lake.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_tehri.jpg",
     "description": "A modern town built to relocate the residents of Old Tehri, overlooking the massive Tehri Dam."
   },
-  
   {
     "id": "govindghat",
     "name": "Govindghat",
@@ -3143,10 +3101,9 @@ export const destinations: Destination[] = [
         "id": "joshimath"
       }
     ],
-    "image": "/images/destinations/archetype_village.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Govindghat1.jpg",
     "description": "A vital transit hub and base camp for pilgrims and trekkers heading to Hemkund Sahib and the Valley of Flowers."
   },
-  
   {
     "id": "mana",
     "name": "Mana Village",
@@ -3208,10 +3165,9 @@ export const destinations: Destination[] = [
         "id": "badrinath"
       }
     ],
-    "image": "/images/destinations/archetype_village.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d395772234eb7d1808b5ea2363868726393fff70.jpg",
     "description": "Known as the last Indian village before the Tibet border, steeped in Mahabharata mythology."
   },
-  
   {
     "id": "guptkashi",
     "name": "Guptkashi",
@@ -3279,10 +3235,9 @@ export const destinations: Destination[] = [
         "id": "ukhimath"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d47fa708164bcb5110cd601b7c585cad3bd11d9b.jpg",
     "description": "A significant religious town housing the ancient Vishwanath Temple, serving as a major stopover for Kedarnath pilgrims."
   },
-  
   {
     "id": "sonprayag",
     "name": "Sonprayag",
@@ -3342,10 +3297,9 @@ export const destinations: Destination[] = [
         "id": "guptkashi"
       }
     ],
-    "image": "/images/destinations/archetype_village.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/b7a93e30c49776404ae7905103fda4c0070fb869.jpg",
     "description": "A holy confluence and the main transit point where pilgrims switch to local transport for Gaurikund."
   },
-  
   {
     "id": "deoria-tal",
     "name": "Deoria Tal",
@@ -3409,10 +3363,9 @@ export const destinations: Destination[] = [
         "id": "ukhimath"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Deoria_Tal_Chandrashila_Chaukamba_reflection.jpg",
     "description": "A pristine emerald lake offering mesmerizing reflections of the Chaukhamba peaks."
   },
-  
   {
     "id": "harsil",
     "name": "Harsil",
@@ -3479,10 +3432,9 @@ export const destinations: Destination[] = [
         "id": "uttarkashi"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bc6f1184a202c0fa817c8d73cf4924ae2dd0d4bd.jpg",
     "description": "An unspoiled and hidden jewel of Uttarakhand, famous for its apple orchards and the Bhagirathi river."
   },
-  
   {
     "id": "uttarkashi",
     "name": "Uttarkashi",
@@ -3550,10 +3502,9 @@ export const destinations: Destination[] = [
         "id": "harsil"
       }
     ],
-    "image": "/images/destinations/archetype_village.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/952730d2466cd6f2d08a2f566e35180532b89ed2.jpg",
     "description": "A holy town on the banks of the Bhagirathi river, home to the famous Vishwanath Temple and NIM."
   },
-  
   {
     "id": "barkot",
     "name": "Barkot",
@@ -3613,10 +3564,9 @@ export const destinations: Destination[] = [
         "id": "yamunotri"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Barkot_With_Bandarpunch.jpg",
     "description": "A scenic town offering magnificent views of the Bandarpoonch peak, serving as a base for Yamunotri."
   },
-  
   {
     "id": "pauri",
     "name": "Pauri",
@@ -3684,10 +3634,9 @@ export const destinations: Destination[] = [
         "id": "srinagar-garhwal"
       }
     ],
-    "image": "/images/destinations/archetype_village.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Pauri_City.jpg",
     "description": "The district headquarters offering breathtaking, wide-angle views of the snow-capped Himalayan peaks."
   },
-  
   {
     "id": "srinagar-garhwal",
     "name": "Srinagar Garhwal",
@@ -3756,10 +3705,9 @@ export const destinations: Destination[] = [
         "id": "rishikesh"
       }
     ],
-    "image": "/images/destinations/archetype_spiritual.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Srinagar_Garhwal_with_Chauras_view.jpg",
     "description": "The largest town in the Garhwal Hills, situated on the banks of the Alaknanda River."
   },
-  
   {
     "id": "kotdwar",
     "name": "Kotdwar",
@@ -3818,8 +3766,620 @@ export const destinations: Destination[] = [
         "id": "lansdowne"
       }
     ],
-    "image": "/images/destinations/archetype_village.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/6b97a2199fe650476526876f26c96daa7be9ebac.jpg",
     "description": "Known as the Gateway to Garhwal, famous for the Sidhbali Hanuman Temple."
+  },
+  {
+    "id": "devprayag",
+    "name": "Devprayag",
+    "region": "Garhwal",
+    "district": "Tehri Garhwal",
+    "category": [
+      "Confluence",
+      "Pilgrimage"
+    ],
+    "specialty": [
+      "Confluence",
+      "Pilgrimage",
+      "Ganga Origin"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Sangam of Alaknanda and Bhagirathi",
+      "Raghunath Temple",
+      "Old Town Ghats"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/devprayag.jpg",
+    "description": "Scenic destination in Garhwal, known for Confluence, Pilgrimage, Ganga Origin."
+  },
+  {
+    "id": "joshimath-narsingh-temple",
+    "name": "Narsingh Temple, Joshimath",
+    "region": "Garhwal",
+    "district": "Chamoli",
+    "category": [
+      "Temple",
+      "Winter Seat"
+    ],
+    "specialty": [
+      "Temple",
+      "Winter Seat",
+      "Pilgrimage"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Narsingh Temple Complex",
+      "Idol of Narsingh",
+      "Route Connection to Badrinath Deity Winter Seat"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/joshimath-narsingh-temple.jpg",
+    "description": "Scenic destination in Garhwal, known for Temple, Winter Seat, Pilgrimage."
+  },
+  {
+    "id": "kartik-swami-rudraprayag",
+    "name": "Kartik Swami Temple",
+    "region": "Garhwal",
+    "district": "Rudraprayag",
+    "category": [
+      "Trek",
+      "Temple"
+    ],
+    "specialty": [
+      "Trek",
+      "Temple",
+      "Himalayan Views"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Kartik Swami Temple Ridge",
+      "Kanak Chauri Village (Trek Start)",
+      "Viewpoints on the Ridge"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/kartik-swami-rudraprayag.jpg",
+    "description": "Scenic destination in Garhwal, known for Trek, Temple, Himalayan Views."
+  },
+  {
+    "id": "munsiyari-landscape",
+    "name": "Munsiyari Landscape",
+    "region": "Kumaon",
+    "district": "Pithoragarh",
+    "category": [
+      "Landscape",
+      "Himalayan Views"
+    ],
+    "specialty": [
+      "Landscape",
+      "Himalayan Views"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Panchachuli Panorama Points",
+      "Khaliya Top Meadows",
+      "Valley Viewpoints around Munsiyari"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/munsiyari-landscape.jpg",
+    "description": "Scenic destination in Kumaon, known for Landscape, Himalayan Views."
+  },
+  {
+    "id": "neelkanth-parvat-badrinath",
+    "name": "Neelkanth Parvat View, Badrinath",
+    "region": "Garhwal",
+    "district": "Chamoli",
+    "category": [
+      "Mountain Peak",
+      "Scenic View"
+    ],
+    "specialty": [
+      "Mountain Peak",
+      "Scenic View",
+      "Badrinath"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Neelkanth Peak Viewpoints around Badrinath",
+      "Badrinath Temple Backdrop",
+      "Tapt Kund Area View"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/neelkanth-parvat-badrinath.jpg",
+    "description": "Scenic destination in Garhwal, known for Mountain Peak, Scenic View, Badrinath."
+  },
+  {
+    "id": "parmarth-niketan-rishikesh",
+    "name": "Parmarth Niketan Ashram, Rishikesh",
+    "region": "Garhwal",
+    "district": "Dehradun",
+    "category": [
+      "Ashram",
+      "Ganga Aarti"
+    ],
+    "specialty": [
+      "Ashram",
+      "Ganga Aarti",
+      "Yoga"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Parmarth Niketan Ghat",
+      "Main Ashram Complex",
+      "Ganga Aarti Area",
+      "Statue of Shiva on the Ganges"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/parmarth-niketan-rishikesh.jpg",
+    "description": "Scenic destination in Garhwal, known for Ashram, Ganga Aarti, Yoga."
+  },
+  {
+    "id": "triyuginarayan",
+    "name": "Triyuginarayan",
+    "region": "Garhwal",
+    "district": "Rudraprayag",
+    "category": [
+      "Temple",
+      "Marriage Site of Shiva–Parvati"
+    ],
+    "specialty": [
+      "Temple",
+      "Marriage Site of Shiva–Parvati",
+      "Pilgrimage"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Triyuginarayan Temple",
+      "Akhand Dhuni (Eternal Fire)",
+      "Village Surroundings",
+      "On Route to Kedarnath Region"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/triyuginarayan.jpg",
+    "description": "Scenic destination in Garhwal, known for Temple, Marriage Site of Shiva–Parvati, Pilgrimage."
+  },
+  {
+    "id": "tungnath-temple",
+    "name": "Tungnath Temple",
+    "region": "Garhwal",
+    "district": "Rudraprayag",
+    "category": [
+      "Highest Shiva Temple",
+      "Trek"
+    ],
+    "specialty": [
+      "Highest Shiva Temple",
+      "Trek",
+      "Himalayan Views"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Tungnath Temple Complex",
+      "Trek Route from Chopta",
+      "Onward Trail to Chandrashila Summit",
+      "Meadows around Temple"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/tungnath-temple.jpg",
+    "description": "Scenic destination in Garhwal, known for Highest Shiva Temple, Trek, Himalayan Views."
+  },
+  {
+    "id": "ukhimath-omkareshwar-temple",
+    "name": "Ukhimath, Omkareshwar Temple",
+    "region": "Garhwal",
+    "district": "Rudraprayag",
+    "category": [
+      "Winter Seat of Kedarnath",
+      "Temple"
+    ],
+    "specialty": [
+      "Winter Seat of Kedarnath",
+      "Temple",
+      "Pilgrimage"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Omkareshwar Temple Complex",
+      "Ukhimath Town",
+      "Route Node for Chopta and Kedarnath",
+      "Nearby Villages"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/ukhimath-omkareshwar-temple.jpg",
+    "description": "Scenic destination in Garhwal, known for Winter Seat of Kedarnath, Temple, Pilgrimage."
+  },
+  {
+    "id": "sunrise-himalayas",
+    "name": "Sunrise (Generic Himalayan View)",
+    "region": "Uttarakhand",
+    "district": "Unknown Context District",
+    "category": [
+      "Sunrise",
+      "Himalayan Views"
+    ],
+    "specialty": [
+      "Sunrise",
+      "Himalayan Views"
+    ],
+    "altitude": "Varies",
+    "best_time": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "avoid_time": [
+      "Monsoon"
+    ],
+    "nearest_airport": "Jolly Grant Airport",
+    "nearest_railway": "Rishikesh / Dehradun",
+    "road_access": "Well connected by road",
+    "top_attractions": [
+      "Typical Sunrise Viewpoint",
+      "Himalayan Ridge Line",
+      "Scenic Vantage Point"
+    ],
+    "activities": [
+      "Sightseeing",
+      "Photography",
+      "Local Exploration"
+    ],
+    "cuisine": [
+      "Local Uttarakhandi",
+      "North Indian"
+    ],
+    "stay_types": [
+      "Hotels",
+      "Guesthouses",
+      "Homestays"
+    ],
+    "budget_range": "₹2000 - ₹8000+ per day",
+    "permits_required": [],
+    "travel_tips": [
+      "Carry warm clothes",
+      "Respect local culture"
+    ],
+    "packing_list": [
+      "Comfortable shoes",
+      "Warm layers",
+      "Camera"
+    ],
+    "festivals": [],
+    "nearby_places": [],
+    "image": "/images/destinations/sunrise-himalayas.jpg",
+    "description": "Scenic destination in Uttarakhand, known for Sunrise, Himalayan Views."
   }
 ];
 

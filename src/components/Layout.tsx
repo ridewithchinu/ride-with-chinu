@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Moon, Sun, Menu, X, MapPin } from 'lucide-react';
+import { Moon, Sun, Menu, X, MapPin, Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -30,27 +30,45 @@ export function Layout() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 text-primary font-artistic text-2xl tracking-wide">
-            <MapPin className="w-6 h-6" />
+      <header className="sticky top-0 z-50 w-full glass shadow-sm">
+        <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-2 text-primary font-artistic text-2xl md:text-3xl tracking-wide group transition-transform hover:scale-105 active:scale-95">
+            <div className="p-1.5 rounded-xl bg-primary/10 transition-colors group-hover:bg-primary/20">
+              <MapPin className="w-6 h-6 md:w-7 md:h-7" />
+            </div>
             <span>RideWithChinu</span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
+                  "relative text-sm font-semibold transition-colors hover:text-primary py-2",
                   location.pathname === link.path ? "text-primary" : "text-muted-foreground"
                 )}
               >
                 {link.name}
+                {location.pathname === link.path && (
+                  <motion.div
+                    layoutId="nav-underline"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full"
+                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                  />
+                )}
               </Link>
             ))}
+            <a
+              href="https://g.page/r/CUZNZh28S96XEBI/review"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 rounded-full bg-secondary/10 text-secondary-foreground hover:bg-secondary/20 transition-all font-semibold text-xs flex items-center gap-1.5 shadow-sm active:scale-95 border border-secondary/20"
+            >
+              <Star className="w-3.5 h-3.5 fill-current" />
+              Write Review
+            </a>
             <button
               onClick={() => setIsDark(!isDark)}
               className="p-2 rounded-full hover:bg-muted transition-colors"
@@ -100,6 +118,15 @@ export function Layout() {
                     {link.name}
                   </Link>
                 ))}
+                <a
+                  href="https://g.page/r/CUZNZh28S96XEBI/review"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-base font-medium transition-colors text-muted-foreground hover:text-primary flex items-center gap-2"
+                >
+                  <Star className="w-5 h-5" />
+                  Reviews
+                </a>
               </div>
             </motion.nav>
           )}
@@ -138,6 +165,18 @@ export function Layout() {
               <li><a href="https://wa.me/917818841169" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">+91 7818841169</a></li>
               <li>Uttarakhand, India</li>
             </ul>
+            <div className="mt-6">
+              <a 
+                href="https://g.page/r/CUZNZh28S96XEBI/review" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="group relative inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-full hover:shadow-xl transition-all font-bold text-sm overflow-hidden active:scale-95"
+              >
+                <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                <Star className="w-5 h-5 fill-current relative z-10" />
+                <span className="relative z-10">Review Us on Google</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className="container mx-auto px-4 mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
