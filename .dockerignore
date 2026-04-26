@@ -1,0 +1,73 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# .dockerignore — Ride with Chinu
+#
+# Keeps the Docker build context minimal and secure:
+#   • No secrets (.env files) ever enter the build context
+#   • No dev tooling (node_modules) imported — builder installs fresh
+#   • No VCS metadata (.git) in image layers
+#   • No pre-built artefacts (dist) — always built inside the container
+#   • No editor / OS noise
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Version control ──────────────────────────────────────────────────────────
+.git
+.gitignore
+.gitattributes
+
+# ── Secrets — NEVER enter the build context ──────────────────────────────────
+.env
+.env.*
+!.env.example            # allow the example template (no real secrets)
+
+# ── Node.js ──────────────────────────────────────────────────────────────────
+node_modules
+npm-debug.log*
+yarn-error.log
+.pnpm-debug.log*
+
+# ── Build output — always rebuilt inside Docker ──────────────────────────────
+dist
+build
+
+# ── Docker itself ────────────────────────────────────────────────────────────
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# ── CI / CD ──────────────────────────────────────────────────────────────────
+.github
+.gitlab-ci.yml
+.circleci
+Jenkinsfile
+
+# ── OS artefacts ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ─────────────────────────────────────────────────────────────
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs
+
+# ── Test / coverage ──────────────────────────────────────────────────────────
+coverage
+*.test.*
+*.spec.*
+__tests__
+__mocks__
+
+# ── Docs / misc ──────────────────────────────────────────────────────────────
+docs
+*.md
+README*
+CHANGELOG*
+LICENSE
+scratch
